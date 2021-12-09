@@ -15,7 +15,7 @@ function App() {
    setvalue("");
  }
  const deleteitems=(id)=>
- {console.log(item[id])
+ {
    setitem((ov)=>
    {
      return ov.filter((arr,index)=>{
@@ -28,7 +28,7 @@ function App() {
       <input  type="text" className="input" placeholder="Enter the task" onChange={pella} value={lvalue}></input>
       <button type="submit" onClick={list} className="inputbutton">+</button>
       {item.map((val,inde)=> {return <ListComp text={val}
-      key={inde}
+      //key={inde}
       id={inde}
       onSelect={deleteitems}/>;})}
     </div>
